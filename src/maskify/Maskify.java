@@ -4,7 +4,9 @@ public class Maskify {
 	
 	public static void main(String[] args) {
 		String text1 = Maskify.maskify("22");
+		String text2 = Maskify.maskify("DE220000111122223333");
 		System.out.println(text1);	
+		System.out.println(text2);
 	}
 
 	public static String maskify(String text) {
