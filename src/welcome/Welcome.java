@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class Welcome {
 	public static void main(String [] args) {
-		String welcomeGreet = Welcome.greet("french");
+		String welcomeGreet = Welcome.greet("irish");
 		System.out.println(welcomeGreet);
 	}
 	
