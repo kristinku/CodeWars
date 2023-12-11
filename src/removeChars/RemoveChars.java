@@ -3,27 +3,33 @@
 
 package removeChars;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
 
 public class RemoveChars {
 	public static void main(String[] args) {
-		String newString = RemoveChars.remove("Baum");
+		String newString = RemoveChars.remove1("Baum");
 		System.out.println(newString);
 	}
-	
+		//erste Lösung
 	  public static String remove(String str) {
 		  str = str.substring(1, str.length() - 1); 
-		  
-		        
-	      
-		  //char[] characters = str.toCharArray();
-		  //char first = str.charAt(0);
-		  //char last = str.charAt(str.length() - 1);
-	  
-	  	//List<Character> chars = new ArrayList<>();
-	  	//for (char ch : str.toCharArray()) { laut internet soll leere Liste gefüllt werden
-	  	//  chars.add(ch); Warum so? wieso kann ich nicht einfach str eintragen?
-		  
-		  return str;
 
+		  return str;
+	 
 	    }
+	  //anderer Lösungsweg (erste Idee aber ohne Hilfe noch nicht umgesetzt bekommen):
+	  public static String remove1(String str) {
+		  char[] arrayChar = str.toCharArray(); //String in char[] umwandeln
+		  List<Character> list = new ArrayList();//char[] in Liste umwandeln, weil Liste mehr Funktionen hat. Hier wird erstmal eine leere Liste erstellt
+		  for(char charOfarray : arrayChar) {
+			  list.add(charOfarray); //Liste wird hier mit chars aus char[] befüllt.
+		  }
+		  list.remove(0);
+		  list.remove(list.size()-1);
+		  return list.stream().map(c -> String.valueOf(c)).collect(Collectors.joining());
+	  }
+ 
 }

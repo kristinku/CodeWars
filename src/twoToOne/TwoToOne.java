@@ -25,6 +25,6 @@ public class TwoToOne {
 			}
 			ArrayList<String> arrayList = new ArrayList<String>(longestString); //um einen Set zu sortieren haben wir eine Array List daraus erstellt
 			Collections.sort(arrayList); // sortieren
-			return String.join("", arrayList); // Komma aus String 
+			return String.join("", arrayList); // Komma aus String rausnehmen
 		}
 }

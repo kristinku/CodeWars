@@ -14,7 +14,7 @@ public class SumArrays {
 	public static double sum(double[] numbers) {
 		double sum = 0;
 		for (int i = 0; i < numbers.length; i++)
-			sum = sum + (numbers[i]);
+			sum = sum + (numbers[i]); // Neue Summe = Alte Summe + aktueller Wert vom Array
 		
 		return sum;
 	}

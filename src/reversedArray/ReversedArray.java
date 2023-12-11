@@ -7,7 +7,7 @@ import java.util.Arrays;
 
 public class ReversedArray {
 	public static void main(String[] args) {
-		long n = (1234);
+		long n = 1234;
 		int[] sortN = ReversedArray.digitize(n);
 		System.out.println(Arrays.toString(sortN)); //int[] muss in einen String umgewandelt werden um mit System.out.println ausgegeben werden.
 	}

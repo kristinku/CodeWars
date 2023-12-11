@@ -7,6 +7,7 @@ public class StarshipEnterprise {
 		
 	}
 	  public static String sayHello(String name) {
-	        return "Hello"+ ", " + name; 
+	    //return "Hello"+ ", " + name; (Erste Version)
+		  return "Hello, " + name;
 	    }
 }

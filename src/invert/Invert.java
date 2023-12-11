@@ -19,7 +19,7 @@ public class Invert {
 		return opositeNumbers;
 	}
 }
-// Funkton ohne extra variable: OpositeNumbers wird nicht gebraucht wir die Werte im Array direkt überschreiben können.
+// Funktion ohne extra variable: OpositeNumbers wird nicht gebraucht wir die Werte im Array direkt überschreiben können.
 //	public static int[] invert(int[] array) {
 //		for (int i = 0; i < array.length; i++) {
 //			array[i] = array[i] * -1;

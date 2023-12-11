@@ -26,4 +26,10 @@ public class DutyFree {
 //Dann wird mit (int) cast wieder zu int umgewandelt
 	 public static int dutyFree3(int normPrice, int discount, int hol) {
 	    return (int)(hol / (normPrice / 100.0f * discount));
+	 }
+	 
+//Lösung von Codewars: anstatt dem f, kann man einfach mit komma rechnen hier die 100.0 dann rechnet Java auch mit float
+	 public static int dutyFree4(int normPrice, int discount, int hol) {
+	    return (int) (hol / ((discount / 100.0) * normPrice)); 
+	 }
 }

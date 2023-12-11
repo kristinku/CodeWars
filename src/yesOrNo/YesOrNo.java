@@ -3,7 +3,7 @@ package yesOrNo;
 public class YesOrNo {
 
 	public static void main(String[] args) {
-		String ergebnis = YesOrNo.boolToWord(true);
+		String ergebnis = YesOrNo.boolToWord(false);
 		System.out.println(ergebnis);
 	}
 

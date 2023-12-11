@@ -35,3 +35,12 @@ public class CamelCaseSolution {
 //		  }
 	}
 }
+
+// LÖSUNG VON CODEWARS PROGRAMMIERER: 
+//public static String camelCase(String input) {
+//    String output = "";
+//        for (int i = 0; i < input.length(); i++) {
+//            output = Character.isUpperCase(input.charAt(i)) ? output + " " + input.charAt(i) : output + input.charAt(i);
+//        }
+//        return output;
+//  }

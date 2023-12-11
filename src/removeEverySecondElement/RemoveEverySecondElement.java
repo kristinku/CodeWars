@@ -13,7 +13,7 @@ public class RemoveEverySecondElement {
 		
 	}
 	  public static Object[] removeEveryOther(Object[] arr) {
-		  int length = arr.length % 2 == 0 ?arr.length/2 : arr.length/2+1;
+		  int length = arr.length % 2 == 0 ?arr.length/2 : arr.length/2+1; //schnelle IF else: Typ Namedervariable Bedingung ?(Bedingung erfüllt) : (:= else, Bedingung nicht erfüllt)
 		  Object[] newObject = new Object[length];
 		  for(int i = 0, j = 0; i < arr.length; i+=2, j++) {
 			  newObject[j] = arr[i];

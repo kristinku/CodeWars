@@ -21,6 +21,6 @@ public class KeepHydrated {
 		  double sumLiters = 0.5 * time;
 		  return (int)sumLiters; //ich caste das double zu einen int. In der Klammer ist der Typ in der die Variable gecastet werden soll
 		  
-		  //return (int) (time * 0.5); Einzeilerlösung von Codewars 
+		  //return (int) (time * 0.5); Einzeilerlösung von Codewars; Cast und Berechnung in einer Zeile
 		  }
 }

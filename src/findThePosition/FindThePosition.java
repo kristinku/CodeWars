@@ -20,8 +20,8 @@ public class FindThePosition {
 	}
 }
 //ABC Lösungen von anderen aus Codewars mit ASCII und cast:
-//  public static String position(char alphabet) {
-//  return "Position of alphabet: " + ((int) alphabet - 96);
+//public static String position(char alphabet) {
+//return "Position of alphabet: " + ((int) alphabet - 96);
 
 //ABC Lösung von anderen aus Codewarse mit String und indexOf: 
 //public static String position(char alphabet){
@@ -31,8 +31,7 @@ public class FindThePosition {
 
 
 //ABC Codewars Lösung: 
-// Bsp: (b - 96(a) +1) = 2 hier erkennt der Computer das b laut Ascii 97 ist und a 96.
+//Bsp: (b - 96(a) +1) = 2 hier erkennt der Computer das b laut Ascii 97 ist und a 96.
 //return "Position of alphabet: " + (alphabet-'a'+1);
 //ähnlich:
 //return "Position of alphabet: " + (alphabet-96);
- 
