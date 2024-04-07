@@ -9,7 +9,7 @@ import java.util.Arrays;
 
 public class Isogram {
 	public static void main(String[] args) {
-		boolean trueOrFalse = Isogram.isIsogram("A");
+		boolean trueOrFalse = Isogram.isIsogram("Array");
 		System.out.println(trueOrFalse);
 		
 	}
@@ -24,7 +24,18 @@ public class Isogram {
 		return true;	
     } 
     
+// Lösung von Codewars mit Set: (Set kann ein Buchstabe nur einmal vorkommen)
     
+//    public class isogram {
+//        public static boolean isIsogram(String str) {
+//            str = str.toLowerCase();
+//            Set<Character> letters = new HashSet<>();
+//            
+//            for(Character c : str.toCharArray())
+//                letters.add(c);
+//            
+//            return str.length() == letters.size();
+//        } 
   
 
 }

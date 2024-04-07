@@ -21,5 +21,13 @@ public class MinimizeSumOfArray {
 		  }
 		  return sum;
 	  }
-	         
+
+// Lösung von Codewars:
+//	  public static int minSum(int[] numbers){
+//	      Arrays.sort(numbers);
+//	      int min = 0;
+//	      for (int i = 0; i < numbers.length / 2; i++)
+//	          min += numbers[i] * numbers[numbers.length - 1 - i];        
+//	      return min; 
+//	    }
 }

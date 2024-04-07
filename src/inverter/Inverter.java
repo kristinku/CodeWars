@@ -13,9 +13,9 @@ import java.time.LocalDateTime;
 
 public class Inverter {
 	public static void main(String[] args) {
-		String response = Inverter.getNumberFromInverter(); //
-		Inverter.writeToFile(response); //Funktionsaufruf der nichts zurück gibt.
-		int numberFromInverter = Inverter.parseNumber(response);
+		String response = Inverter.getNumberFromInverter(); //Funktion um per http GET Anfrage die Zahl vom Wechselrichter zu holen.
+		Inverter.writeToFile(response); //Funktionsaufruf der nichts zurück gibt, um den erhaltenen Wert in eine Textdatei Namens Loggbuch zu schreiben.
+		int numberFromInverter = Inverter.parseNumber(response); //Funktion um einheitliche Formatierung des response 
 		System.out.println(numberFromInverter);
 		
 

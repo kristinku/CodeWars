@@ -4,11 +4,11 @@ package evaporator;
 
 public class Evaporator {
 	public static void main(String[] args) {
-		int dayOutOfUse = Evaporator.evaporator(10, 10, 5);
+		int dayOutOfUse = Evaporator.evaporator(10, 10, 5); //Aufruf nur mit Werten
 		System.out.println(dayOutOfUse);
 	}
 	
-	public static int evaporator(double content, double evap_per_day, double threshold) {
+	public static int evaporator(double content, double evap_per_day, double threshold) { //Definition was die Funktion für Argumente benötigt.
 			int days = 0;
 			double minThreshold = content / 100 * threshold;
 			for(int i = 1; content >= minThreshold; i++) {
