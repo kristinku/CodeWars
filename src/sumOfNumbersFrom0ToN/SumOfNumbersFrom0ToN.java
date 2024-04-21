@@ -10,7 +10,7 @@ import java.util.List;
 
 public class SumOfNumbersFrom0ToN {
 	public static void main(String[] args) {
-		String zeroToN = SumOfNumbersFrom0ToN.showSequence(5);
+		String zeroToN = SumOfNumbersFrom0ToN.showSequence2(5);
 		System.out.println(zeroToN);
 	}
 
@@ -35,5 +35,26 @@ public class SumOfNumbersFrom0ToN {
 			}
 		}
 		return calculate.toString().replaceAll("[\\[\\]]", "").replaceAll(",", "").replaceAll(" ", "").replaceAll("="," = ");
+	}
+	
+	// Alternativ Lösung von Andi
+	public static String showSequence2(int value) {
+		if (value == 0) {
+			return "0=0";
+		}
+		if (value < 0) {
+			return value + "<0";
+		}
+		List<String> calculate = new ArrayList<String>();
+		int sum = 0;
+		for (int i = 0; i <= value; i++) {
+			sum = sum + i;
+			if (i < value) {
+				calculate.add(String.valueOf(i));
+			} else {
+				calculate.add(String.valueOf(value));
+			}
+		}
+		return String.join("+", calculate) + " = " + sum; //Gute Lösung um Liste zu STring zu machen
 	}
 }
