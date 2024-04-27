@@ -20,3 +20,8 @@ public class OnlyNeedOne {
     	 return false;
     }
 }
+
+//Lösung Codewars: 
+//public static boolean check(Object[] a, Object x) {
+//    return Arrays.asList(a).contains(x);
+//}
