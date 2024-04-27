@@ -14,4 +14,11 @@ public class ErrorHandling {
 			 //Wenn eine Funktion etwas zurückgeben soll, muss wie z.B. hier ein int zurück gegeben werden oder wie hier mit throw einen Fehler.
 		 }
 	 }
+//Wir werfen in dem Beispiel nur eine Exception, ohne davor den fehler zu try und catchen. 
+	 public static int divisor2(int number, int divisor){
+		 if(divisor == 0) {
+			 throw new IllegalArgumentException("Teilen durch 0 ist nicht erlaubt!"); //Throw beendet wie ein return den Ablauf einer Funktion
+		 }
+		 return number/divisor;
+	 }
 }
