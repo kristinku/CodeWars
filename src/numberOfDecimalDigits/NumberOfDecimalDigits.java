@@ -19,4 +19,14 @@ public class NumberOfDecimalDigits {
 		  }
 		    return anzahl;
 		  }
+	 
 }
+
+//Lösungen aus Codewars: 
+//public static int Digits(long n) {
+//    return Long.toString(n).length();
+//  }
+
+//public static int Digits(long n) {
+//    return String.valueOf(n).length();
+//  }
