@@ -31,6 +31,10 @@ public class ShortenToDate {
 			return ("NO MATCH");
 		}
 	}
+//Lösung Codewars mit Regex: 	
+//  return longDate.replaceAll(",.+", ""); mit ",.+" der text im String der mit , anfängt wird ersetzt mit nichts.
+										//Hier ist kein Pattern oder Matcher nötig da wir nicht auf die Regex Group Zugreifen wollen
+	
 //Lösung aus Codewars mit Substring: 
 //   return longDate.substring(0, longDate.indexOf(','));
 }
